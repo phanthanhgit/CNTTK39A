@@ -81,7 +81,7 @@ use App\Users;
 								echo $html;
 							?>
 							@if(Auth::check() && Auth::User()->id == $item->user_id)
-							<a class="text-danger" href="{!! asset('delcmt') !!}/{!! $item->id !!}">Xóa bình luận</a>
+							<a class="text-danger" href="{!! asset('delcmt') !!}/{!! $item->id !!}" onclick="return accept_del('Bạn chắc chắn muốn xóa bình luận này không?')">Xóa bình luận</a>
 							@endif
 						</div>
 					</div>

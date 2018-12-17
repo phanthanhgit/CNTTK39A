@@ -123,7 +123,6 @@ class PostController extends Controller
 		$post->title = $request->txttitle;
 		$post->content = $request->txtcontent;
 		$post->slug = str_slug($request->txttitle);
-		$post->type = 'question';
 		$tags = trim($request->txttag);
 		$post->tags = trim($request->txttag);
 		if(strlen(trim($request->txttag)) > 0){

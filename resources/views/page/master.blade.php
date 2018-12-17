@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="author" content="phanthanhblog.com" />
-<link href="{!! asset('public') !!}/assets/img/codedao.png" rel="shortcut icon">
+	<link href="{!! asset('public') !!}/assets/img/codedao.png" rel="shortcut icon">
   <link href="{!! asset('public') !!}/assets/img/codedao.png" rel="apple-touch-icon-precomposed">
   
   <title> @yield('title') </title>

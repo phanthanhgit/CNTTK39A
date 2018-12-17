@@ -36,7 +36,7 @@ class CommentController extends Controller
 	  	$noti->save();
   	}
   	
-    $cmts = Comments::select('user_id')->where([['post_id', $id], ['user_id', '<>', Auth::User()->id]])->groupBy('user_id')->get();
+    $cmts = Comments::select('user_id')->where([['post_id', $id], ['user_id', '<>', Auth::User()->id], ['user_id', '<>', $post->user_id]])->groupBy('user_id')->get();
     foreach($cmts as $item){
       $noti = new Noti;
       $noti->to_user = $item->user_id;
